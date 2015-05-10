@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8">
+    <title>Note Editor</title>
+   
+      <link rel="stylesheet" media="all" href="css/site.css" type="text/css"> 
+      <link rel="stylesheet" media="all" href="css/note-editor.css" type="text/css">
+         
+      
+
+      <script type="text/javascript" src="javascript/jquery-1.10.2.min.js"></script>
+      <script type="text/javascript" src="javascript/jquery-htmlclean.js"></script>
+      <script type="text/javascript" src="javascript/note-editor.js"></script>
+
+
+    <script>
+      window.addEventListener('DOMContentLoaded', function (e) {
+
+        // add node-editor
+        var noteEditor = new NoteEditor( {displayTextField: true} );
+        
+      });
+    </script>
+
+</head>
+
+<body>
+
+
+
+
+    <div class="text-options active">
+      <div class="options">
+        <span class="no-overflow">
+          <span class="lengthen ui-inputs">
+            <button class="url useicons">&#xe005;</button>
+            <input class="url-input" type="text" placeholder="Type or Paste URL here"/>
+            <button class="bold">b</button>
+            <button class="italic">i</button>
+            <!-- <button class="quote">&rdquo;</button> -->
+          </span>
+        </span>
+      </div>
+    </div> 
+
+
+
+
+     <div class="container">
+       
+       <h1>Note editor &dash; <strong>Example of output </strong></h1>
+        <p>A note editor for indie blogging platforms. </p>
+       
+
+      <form  name="editor" action="" method="post">
+
+   
+        <fieldset class="note-editor">
+          <!-- text form field should be here -->
+        </fieldset>
+        
+          <textarea name="text" class="large-text-area"></textarea>
+          <textarea name="html" class="large-text-area"></textarea>
+          <textarea name="json" class="large-text-area"></textarea>     
+          <textarea name="tags" class="large-text-area"></textarea>
+    
+        <input type="submit" value="Post"/>
+        
+      </form> 
+
+     </div>
+
+  </body> 
+</html>
