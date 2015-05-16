@@ -396,7 +396,7 @@ function NoteEditor(options) {
 // https://github.com/tholman/zenpen/blob/master/licence.md
 
 // version 0.0.1
-
+var lastSelection;
 
 var editor = (function() {
 
@@ -408,6 +408,7 @@ var editor = (function() {
 
 	var composing;
 	var onTextChange = new Event('text-change');
+
 
 	function init() {
 		composing = false;
